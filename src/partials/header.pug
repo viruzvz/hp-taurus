@@ -1,5 +1,5 @@
 nav.navbar_control
-  .container-fluiid
+  .container-fluid
     .row
       .col-lg-6
         .navbar_control-brand
@@ -21,27 +21,28 @@ nav.navbar_control
           li  
             a(href='#')
               i.fab.fa-instagram
-section(role='Apresentação')
-  .hero
-    .container
-      .row
-        .col-xl-12
-          nav
-            ul
-              li  anchor
-              li  anchor
-              li  anchor
-              li  anchor
-              li  anchor
-        .col-xl-6 
+section(style='margin-bottom:1px')
+section.hero.hero-item(role='Apresentação')
+  .container.h-100
+    .row.h-100.align-items-center
+      .col-xl-12
+        nav
+          ul
+            li  anchor
+            li  anchor
+            li  anchor
+            li  anchor
+            li  anchor
+      .col-xl-6 
 
-        .col-xl-6
-          h1 Taurus Seguros 40 anos
-          p Kits de desconto em oficinas
-          p Assistência jurídica
-          a.btn.btn-lg.btn-success(href='#' title='cotação')
+      .col-xl-6.text-right
+        h1 Taurus Seguros 40 anos
+        p Kits de desconto em oficinas
+        p Assistência jurídica
+        .btn-group.btn-space
+          a.btn.btn-lg.btn-success(href='#' title='cotação') 
             | Cotação on-line
             i.fas.fa-calc
-          a.btn.btn-lg.btn-success(href='#' title='vendedor')
+          a.btn.btn-lg.btn-success(href='#' title='vendedor') 
             | Fale com um vendedor
             i.fas.fa-user

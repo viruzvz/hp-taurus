@@ -1,9 +1,11 @@
 @import 'vendors/bootstrap';
+@import 'vendors/font-awesome';
 
 @import 'template/variables';
 @import 'template/template';
 @import 'template/mixins';
 
 @import 'componentes/footer';
-@import 'componentes/embed-responsive';
-@import 'componentes/navbar-control';
+@import 'componentes/embed_responsive';
+@import 'componentes/navbar_control';
+@import 'componentes/hero';

@@ -1,0 +1,27 @@
+.hero {
+  min-height: 530px;
+  background-attachment: fixed;
+  background-position: 50% top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero-head {
+  display: flex;
+  align-items: center;
+  min-height: 130px;
+  background-color: hsla(35, 95%, 59%, 0.8);
+}
+
+.hero-body {
+  display: flex;
+  align-items: center;
+}
+
+.hero-item2 {
+  background-image: url();
+}
+
+.hero-item {
+  background-image: url('../../images/hero.jpg');
+}
