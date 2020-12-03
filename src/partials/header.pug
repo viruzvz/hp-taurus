@@ -1,48 +1,55 @@
 nav.navbar_control
-  .container-fluid
-    .row
-      .col-lg-6
-        .navbar_control-brand
-          img.img-fluid(src="", alt="")
-      .col-lg-6
-        ul
-          li Horario de funcionamento de 08h às 12h e 14h às 18h
+  .container-fluid.h-100
+    .row.h-100
+      .col-lg-6.navbar_control-display
+        a(href='#').navbar_control-brand
+          img.img-fluid(src="images/logo-white.svg", alt="Logo Taurus Seguros")
+      .col-lg-6.navbar_control-display
+        ul.navbar_control-list.navbar_control-list--right
+          li
+            i.fas.fa-clock &nbsp;
+            | Horario de funcionamento de 08h às 12h e 14h às 18h
           li  
-            a()
+            a.link.navbar_control-link(href='tel:' title='Telefone Taurus seguros')
+              i.fas.fa-phone &nbsp;
               | +55 61 3525-4145
-              i.fas.fa-fone
           li  
-            a()
+            a.link.navbar_control-link(href='tel:' title='Contatos Taurus seguros')
+              i.fas.fa-comment &nbsp;
               | Fale conosco
-              i.fas.fa-fone
           li  
-            a(href='#')
+            a.link.link-deep--facebook(href='#' title='Taurus Facebook')
               i.fab.fa-facebook
           li  
-            a(href='#')
+            a.link.link-deep--instagram(href='#' title='Taurus Instagram')
               i.fab.fa-instagram
-section(style='margin-bottom:1px')
 section.hero.hero-item(role='Apresentação')
-  .container.h-100
-    .row.h-100.align-items-center
+  .container
+    .row
       .col-xl-12
-        nav
-          ul
-            li  anchor
-            li  anchor
-            li  anchor
-            li  anchor
-            li  anchor
-      .col-xl-6 
+        ul.navbar_control-list.py-4
+          li
+            a.link.navbar_control-link(href='#') links
+          li
+            a.link.navbar_control-link(href='#') links
+          li
+            a.link.navbar_control-link(href='#') links
+          li
+            a.link.navbar_control-link(href='#') links
+          li
+            a.link.navbar_control-link(href='#') links
+      .col-xl-4 
 
-      .col-xl-6.text-right
-        h1 Taurus Seguros 40 anos
-        p Kits de desconto em oficinas
-        p Assistência jurídica
-        .btn-group.btn-space
-          a.btn.btn-lg.btn-success(href='#' title='cotação') 
-            | Cotação on-line
-            i.fas.fa-calc
-          a.btn.btn-lg.btn-success(href='#' title='vendedor') 
-            | Fale com um vendedor
-            i.fas.fa-user
+      .col-xl-8.text-right
+        h1.title-xxl.title-m.white 40 anos de seguros
+        p.c-tertiary.title-lg Kits de desconto em oficinas
+        p.c-tertiary.title-lg Assistência jurídica
+        .btn_control
+          div
+            a.btn.btn-lg.btn-success(href='#' title='cotação') 
+              i.fas.fa-calculator 
+              |  Cotação on-line
+          div
+            a.btn.btn-lg.btn-primary(href='#' title='vendedor') 
+              i.fas.fa-user 
+              |  Fale com um vendedor

@@ -1,5 +1,5 @@
 .hero {
-  min-height: 530px;
+  height: 530px;
   background-attachment: fixed;
   background-position: 50% top;
   background-repeat: no-repeat;
@@ -24,4 +24,9 @@
 
 .hero-item {
   background-image: url('../../images/hero.jpg');
+}
+
+.hero-item--2 {
+  background-image: url('../../images/hero2.jpg');
+  background-size: cover;
 }

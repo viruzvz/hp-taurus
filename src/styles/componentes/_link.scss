@@ -1,0 +1,128 @@
+.link {
+  transition: $linktransition;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.link-block {
+  transition: $linktransition;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.link-text {
+  color: $link;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $linkhover;
+    text-decoration: underline !important;
+  }
+}
+// links social network fundos escuros
+.link-deep--facebook {
+  color: white;
+
+  &:hover {
+    color: #4867aa;
+  }
+}
+
+.link-deep--twitter {
+  color: white;
+
+  &:hover {
+    color: #1da0f1;
+  }
+}
+
+.link-deep--instagram {
+  color: white;
+
+  &:hover {
+    color: #a2108f;
+  }
+}
+
+.link-deep--youtube {
+  color: white;
+
+  &:hover {
+    color: #f80000;
+  }
+}
+
+.link-deep--whatsapp {
+  color: white;
+
+  &:hover {
+    color: $success;
+  }
+}
+// links para fundos escuros
+.link-deep {
+  color: white;
+
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.link-deep--cousin {
+  color: white;
+
+  &:hover {
+    color: $cousin;
+  }
+}
+// links para fundos claros
+.link-light {
+  color: #444;
+
+  &:hover {
+    color: $default;
+  }
+}
+
+.link-light--tertiary {
+  color: #444;
+
+  &:hover {
+    color: $tertiary;
+  }
+}
+
+.link-clear {
+  color: #ccc;
+
+  &:hover {
+    color: $default;
+  }
+}
+
+.link-clear--tertiary {
+  color: #666;
+
+  &:hover {
+    color: $tertiary;
+  }
+}
+// links variables fundos claros
+.link-primary--clear {
+  color: $primary;
+
+  &:hover {
+    color: $tertiary;
+  }
+}

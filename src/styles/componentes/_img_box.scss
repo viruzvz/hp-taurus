@@ -1,0 +1,15 @@
+.img_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 15px;
+
+  img {
+    width: 70px;
+    border-radius: 0.25rem;
+    border: 1px solid white;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}

@@ -2,4 +2,45 @@
   height: 60px;
   background-color: $primary;
   box-shadow: $box-shadow-sm;
+  // display: flex;
+  // align-items: center;
+}
+
+.navbar_control-display {
+  align-items: center;
+  display: flex;
+}
+
+.navbar_control-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  > li {
+    list-style: none;
+    display: inline;
+    color: white;
+  }
+
+  > li:not(:first-child) {
+    margin-left: 15px;
+  }
+}
+
+.navbar_control-list--right {
+  text-align: right;
+}
+
+.navbar_control-link {
+  color: white;
+
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.navbar_control-brand {
+  img {
+    width: 150px;
+  }
 }

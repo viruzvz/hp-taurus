@@ -1,0 +1,22 @@
+.contact {
+  background-color: #323245;
+}
+
+.contact-social {
+  > span {
+    font-size: $delta;
+
+    &:not(:first-child) {
+      margin-left: 15px;
+    }
+  }
+}
+
+.contact-form {
+  input,
+  select,
+  textarea {
+    background-color: #232331;
+    border: 1px solid #636363;
+  }
+}
