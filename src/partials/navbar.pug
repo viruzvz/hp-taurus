@@ -1,0 +1,18 @@
+nav.navbar.navbar-expand-lg.navbar_control.sticky-js.navbar-js.navsec.transition.bg-gradient--gray.d-none
+  a(href='#' title='Retornar para home').navbar_control-brand
+    img.img-fluid(src="images/logo-primaria.svg", alt="Logo Taurus Seguros")
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+    span.fas.fa-bars
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar_control-list.navbar_control-link--primary.navigation
+      include nav.pug
+    include whatsapp.pug
+
+nav.navbar_control.navpri.navbar
+  .navbar_control-display
+    a(href='#' title='Retornar para home').navbar_control-brand
+      img.img-fluid(src="images/logo-white.svg", alt="Logo Taurus Seguros")
+  .d-none.d-lg-block
+    .navbar_control-display
+      ul.navbar_control-list.navbar_control-list--right
+        include navpri.pug

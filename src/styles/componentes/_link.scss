@@ -70,6 +70,17 @@
     color: $success;
   }
 }
+
+// social para fundos claros
+
+.link-clear--whatsapp {
+  color: $success;
+
+  &:hover {
+    color: green;
+  }
+}
+
 // links para fundos escuros
 .link-deep {
   color: white;
