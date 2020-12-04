@@ -11,7 +11,7 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 module.exports = (env = {}, argv) => {
   const isDev = argv.mode !== 'production'
-  const PUBLIC_PATH = isDev ? '/' : '/noticias/++theme++senado.intranet/frontend/'
+  const PUBLIC_PATH = isDev ? '/' : '/'
 
   const config = {
     entry: {
@@ -24,7 +24,7 @@ module.exports = (env = {}, argv) => {
     },
 
     output: {
-      path: path.resolve(__dirname, '../senado/intranet/static/frontend'),
+      path: path.resolve(__dirname, 'dist'),
       filename: '[name].bundle.js',
       publicPath: isDev ? '/' : PUBLIC_PATH
     },
