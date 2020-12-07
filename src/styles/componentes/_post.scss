@@ -1,0 +1,23 @@
+.post-blog {
+  margin-bottom: 15px;
+}
+
+.post-head {
+  border-bottom: 1px solid $cut;
+  margin-bottom: 15px;
+}
+
+.post-body {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.post-thumb {
+  max-width: 800px;
+  margin-right: 15px;
+}
+
+.post-caption {
+  display: inline-block;
+  vertical-align: top;
+}

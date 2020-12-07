@@ -1,0 +1,15 @@
+doctype html  
+html(lang='pt')  
+  head
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title Taurus seguros
+  body
+    include componentes/mixin.pug
+    block header
+      include partials/header.pug
+    block content
+      include pages/blog.pug
+    block footer
+      include partials/footer.pug 
