@@ -1,3 +1,26 @@
+.title--hero {
+  font-size: 120px;
+  font-family: impactreg, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 90px;
+  }
+}
+
+.hero--container {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+
+  @include media-breakpoint-down(md) {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+
 .hero {
   height: 630px;
   background-attachment: fixed;

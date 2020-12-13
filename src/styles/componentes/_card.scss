@@ -1,5 +1,6 @@
 .card--primary {
-  color: $primary;
+  color: white;
+  background-color: $primary;
 }
 
 .card-list {
@@ -8,5 +9,36 @@
 
   > li {
     list-style: none;
+  }
+}
+
+.card--img {
+  img {
+    object-fit: cover;
+  }
+}
+
+.object--cover {
+  object-fit: cover;
+}
+
+.card-list--parent {
+  padding: 10px;
+  font-size: 14px;
+
+  > ul {
+    margin: 0;
+    padding-left: 15px;
+  }
+
+  > a {
+    color: $primary;
+    transition: $linktransition;
+    text-decoration: none;
+
+    &:hover {
+      color: $tertiary;
+      text-decoration: none;
+    }
   }
 }

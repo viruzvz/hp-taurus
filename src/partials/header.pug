@@ -2,7 +2,7 @@ header
   include navbar.pug
   section.hero.hero-item(role='Apresentação')
     .setsubbackground.hero-item--3
-      .container
+      .container.hero--container
         .row
           .col-xl-12
             .d-none.d-lg-block
@@ -10,7 +10,8 @@ header
                 ul.navbar_control-list.navbar_control-link--white
                   include nav.pug
           .col-xl-12.text-right
-            h1.title-xxl.title-m.white Taurus Corretora <br> de Seguros
+            h1.title--hero Taurus
+            p.title-xl.title-m.white  Corretora de Seguros
             .d-none.d-md-block
               p.c-tertiary.title-lg Kits de desconto em oficinas
               p.c-tertiary.title-lg Assistência jurídica
@@ -22,7 +23,7 @@ header
                 i.fas.fa-user 
                 |  Fale com um vendedor
   section.d-block.d-md-none(role='Apresentação')
-    .btn-group.navbar_control-btn
+    .btn-group.navbar_control-btn.w-100
       a.btn.rounded-0.btn-success(href='#' title='cotação') 
         i.fas.fa-calculator 
         |  Cotação on-line

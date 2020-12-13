@@ -124,7 +124,7 @@ module.exports = (env = {}, argv) => {
       new MiniCssExtractPlugin({
         filename: '[name].css'
       }),
-      ...glob.sync(isDev ? 'src/*.pug' : 'src/index.pug').map(
+      ...glob.sync(isDev ? 'src/*.pug' : 'src/*.pug').map(
         (fileName) =>
           new HtmlWebpackPlugin({
             template: fileName,

@@ -33,8 +33,8 @@ $(window).scroll(function () {
   // Assign active class to nav links while scolling
   $('.page-section').each(function (i) {
     if ($(this).position().top <= scrollDistance) {
-      $('.navigation a.active').removeClass('active')
-      $('.navigation a').eq(i).addClass('active')
+      $('.navigation a.a--active').removeClass('a--active')
+      $('.navigation a').eq(i).addClass('a--active')
     }
   })
 }).scroll()
@@ -45,18 +45,18 @@ var navsec = $('.navsec')
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
     btn.addClass('show')
-    navsec.addClass('show')
+    navsec.fadeIn("slow");
   } else {
     btn.removeClass('show')
-    navsec.removeClass('show')
+    navsec.fadeOut("slow");
   }
 })
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 100) {
-    navsec.removeClass('d-none')
-  } 
-})
+// $(window).scroll(function () {
+//   if ($(window).scrollTop() > 100) {
+//     navsec.removeClass('d-none')
+//   } 
+// })
 
 btn.on('click', function (e) {
   e.preventDefault()

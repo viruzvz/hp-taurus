@@ -1,3 +1,26 @@
+mixin post(src)
+  .post-blog
+    a.link-primary--clear.link(href='#')
+      .post-head
+        a.link-primary--clear.link(href='#')
+          h3.title-xl.c-tertiary Titulo do post
+      .row
+        .col-md-4.mb-4
+          a.link-primary--clear.link(href='#')
+            img.img-fluid(src=src, alt="")
+        .col-md-8.mb-4
+          a.link-primary--clear.link(href='#') Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolorum libero eos veritatis delectus et ipsum non maxime iure? Voluptatum tempore eius quidem inventore eos. Distinctio alias harum voluptatem! Quod.
+    .post-footer
+      small Publicado em 
+mixin card-top(src)
+  .card.rounded-0
+    .embed-responsive.embed-responsive-4by3
+      img.embed-responsive-item.card-img-top(src=src alt='...')
+    .card-body
+      h5.card-title Card title
+      p.card-text
+        | Some quick example text to build on the card title and make up the bulk of the card's content.
+      a.btn.btn-primary.rounded-0(href='#') Go somewhere
 .container
   .row
     .col-xl-12
@@ -9,49 +32,22 @@
           .col-auto
             button.btn.btn-primary.mb-2.rounded-0(type='submit') 
               i.fas.fa-search
+    .col-xl-12
+      .row
+        .col-xl-4.mb-4
+          +card-top('https://unsplash.it/1500/740?random&seed=1')
+        .col-xl-4.mb-4
+          +card-top('https://unsplash.it/900/700?random&seed=2')
+        .col-xl-4.mb-4
+          +card-top('https://unsplash.it/800/600?random&seed=3')
     .col-xl-9
-      .post-blog
-        a.link-primary--clear.link(href='#')
-          .post-head
-            h1.title-xl.c-tertiary Titulo do post
-          .post-body
-            .post-thumb
-              img.img-fluid(src="https://unsplash.it/800/600?random&seed=0", alt="")
-            .post-caption
-              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem reiciendis et nobis, sunt distinctio odit repellat, officiis cumque quae illo. Magni recusandae explicabo quibusdam unde architecto ut veniam quos?
-        .post-footer
-          small Publicado em 
-      .post-blog
-        .post-head
-          h1.title-xl.c-tertiary Titulo do post
-        .post-body
-          .post-thumb
-            img.img-fluid(src="https://unsplash.it/800/600?random&seed=1", alt="")
-          .post-caption
-            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem reiciendis et nobis, sunt distinctio odit repellat, officiis cumque quae illo. Magni recusandae explicabo quibusdam unde architecto ut veniam quos?
-        .post-footer
-          small Publicado em 
-      .post-blog
-        .post-head
-          h1.title-xl.c-tertiary Titulo do post
-        .post-body
-          .post-thumb
-            img.img-fluid(src="https://unsplash.it/800/600?random&seed=2", alt="")
-          .post-caption
-            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem reiciendis et nobis, sunt distinctio odit repellat, officiis cumque quae illo. Magni recusandae explicabo quibusdam unde architecto ut veniam quos?
-        .post-footer
-          small Publicado em 
-      .post-blog
-        .post-head
-          h1.title-xl.c-tertiary Titulo do post
-        .post-body
-          .post-thumb
-            img.img-fluid(src="https://unsplash.it/800/600?random&seed=3", alt="")
-          .post-caption
-            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem reiciendis et nobis, sunt distinctio odit repellat, officiis cumque quae illo. Magni recusandae explicabo quibusdam unde architecto ut veniam quos?
-        .post-footer
-          small Publicado em 
-
+      +post('https://unsplash.it/800/600?random&seed=1')
+      +post('https://unsplash.it/800/600?random&seed=2')
+      +post('https://unsplash.it/800/600?random&seed=3')
+      +post('https://unsplash.it/800/600?random&seed=4')
+      +post('https://unsplash.it/800/600?random&seed=5')
+      +post('https://unsplash.it/800/600?random&seed=6')
+      +post('https://unsplash.it/800/600?random&seed=7')
       .py-4.border-top
         nav(aria-label='Page navigation example')
           ul.pagination
@@ -68,33 +64,33 @@
 
     .col-xl-3
       aside.aside.my-4
-        .card.mb-2
+        .card.mb-2.rounded-0
           .card-header.card--primary
             strong Categorias
-          .card-body
-            ul.card-list
+          .card-body.card-list--parent
+            ul
               li
                 a.link-primary--clear.link(href='#') Projetos
               li
                 a.link-primary--clear.link(href='#') Novidades
               li
                 a.link-primary--clear.link(href='#') Planos
-        .card.mb-2
+        .card.mb-2.rounded-0
           .card-header.card--primary
             strong Categorias
-          .card-body
-            ul.card-list
+          .card-body.card-list--parent
+            ul
               li
                 a.link-primary--clear.link(href='#') Projetos
               li
                 a.link-primary--clear.link(href='#') Novidades
               li
                 a.link-primary--clear.link(href='#') Planos
-        .card.mb-2
+        .card.mb-2.rounded-0
           .card-header.card--primary
             strong Categorias
-          .card-body
-            ul.card-list
+          .card-body.card-list--parent
+            ul
               li
                 a.link-primary--clear.link(href='#') Projetos
               li
