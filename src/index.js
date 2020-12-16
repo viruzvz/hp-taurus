@@ -45,7 +45,7 @@ var navsec = $('.navsec')
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
     btn.addClass('show')
-    navsec.fadeIn("slow");
+    navsec.fadeIn("slow")
   } else {
     btn.removeClass('show')
     navsec.fadeOut("slow");
