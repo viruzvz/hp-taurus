@@ -27,6 +27,12 @@ $('.nav-item').click(function(event){
   event.preventDefault()
 })
 
+// add class to wordpress widget ul
+$(document).ready(function() {
+  $('.card-list--parent > ul').addClass('fa-ul')
+  $('.card-list--parent > ul li').append('<span class="fa-li"><i class="fas fa-check-square"></i></span>')
+})
+
 $(window).scroll(function () {
   var scrollDistance = $(window).scrollTop()
 
@@ -55,7 +61,7 @@ $(window).scroll(function () {
 // $(window).scroll(function () {
 //   if ($(window).scrollTop() > 100) {
 //     navsec.removeClass('d-none')
-//   } 
+//   }
 // })
 
 btn.on('click', function (e) {

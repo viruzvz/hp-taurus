@@ -11,6 +11,11 @@
   overflow: hidden;
 }
 
+.mosaic_img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .mosaic_details {
   position: absolute;
   text-align: center;

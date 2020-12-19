@@ -21,3 +21,21 @@
   display: inline-block;
   vertical-align: top;
 }
+
+.post-list {
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px  rgba(50, 50, 50, 0.25);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  color: #666;
+}
+
+.post-faList {
+  font-size: 22px;
+  line-height: 1;
+  color: $success;
+}
