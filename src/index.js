@@ -30,8 +30,16 @@ $('.nav-item').click(function(event){
 // add class to wordpress widget ul
 $(document).ready(function() {
   $('.card-list--parent > ul').addClass('fa-ul')
-  $('.card-list--parent > ul li').append('<span class="fa-li"><i class="fas fa-check-square"></i></span>')
+  $('.card-list--parent > ul li').append('<span class="fa-li"><i class="fas fa-link"></i></span>')
 })
+
+// rolar para o Nimble
+$(document).ready(function () {
+  // Handler for .ready() called.
+  $('html, body').animate({
+      scrollTop: $('#js-nimble').offset().top
+  }, 'slow');
+});
 
 $(window).scroll(function () {
   var scrollDistance = $(window).scrollTop()
