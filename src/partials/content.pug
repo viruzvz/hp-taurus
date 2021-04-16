@@ -6,24 +6,24 @@ section.space_content-y.page-section(role='Porque taurus?')
       .col-xl-3.text-center.c-tertiary.mb-2
         img.img-fluid.w-25(src="images/security.svg", alt="Segurança na Taurus")
         .my-2.title.title-m Segurança
-        p.my-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam obcaecati, 
+        p.my-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam obcaecati,
       .col-xl-3.text-center.c-tertiary.mb-2
         img.img-fluid.w-25(src="images/discount.svg", alt="Fidelidade na Taurus")
         .my-2.title.title-m Fidelidade
-        p.my-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam obcaecati, 
+        p.my-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam obcaecati,
       .col-xl-3.text-center.c-tertiary.mb-2
         img.img-fluid.w-25(src="images/feather.svg", alt="Facilidade na Taurus")
         .my-2.title.title-m Facilidade
-        p.my-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam obcaecati, 
+        p.my-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam obcaecati,
       .col-xl-3.text-center.c-tertiary.mb-2
         img.img-fluid.w-25(src="images/user.svg", alt="Especialistas da Taurus")
         .my-2.title.title-m Especialistas
-        p.my-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam obcaecati, 
+        p.my-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam obcaecati,
 section.space_content-y.bg-section.page-section(role='Seguradoras')
   .container#seguradoras
     .row
       .col-xl-12.text-center.space_title-b
-        h2.title-xl.c-tertiary.m-0 Seguradoras
+        h2.title-xl.white.m-0 Seguradoras
       .col-xl-12
         .d-flex.justify-content-around.flex-wrap
           img.mb-2.img-fluid(src="images/seguradoras/porto.png", alt="Porto Seguro")
@@ -89,12 +89,14 @@ section.space_content-y.contact.page-section(role='Contato')
             input#exampleFormControlInput1.form-control(type='email' placeholder='name@example.com')
           .form-group
             label.title-sm.white(for='exampleFormControlSelect1') Example select
-            select#exampleFormControlSelect1.form-control
-              option 1
-              option 2
-              option 3
-              option 4
-              option 5
+            select.js-my-select#exampleFormControlSelect1.form-control
+              option ---
+              option(value='Trabalhe-com-a-Taurus') Trabalhe-com-a-Taurus
+              option(value='dois') 2
+              option(value='tres') 3
+              option(value='quatro') 4
+          .form-group.js-my-file.d-none.um(class='Trabalhe-com-a-Taurus')
+            input(type="file")
           .form-group
             label.title-sm.white(for='exampleFormControlTextarea1') Example textarea
             textarea#exampleFormControlTextarea1.form-control(rows='3')
@@ -104,14 +106,14 @@ section.space_content-y.contact.page-section(role='Contato')
       .col-xl-6
         p
           a.link.link-deep--cousin(href='#')
-            i.fas.fa-map-marker-alt 
+            i.fas.fa-map-marker-alt
             | &nbsp; SRTVS QD. 701 CONJ L ED Assis Chateaubriand 1º andar sala 111
         p
           a.link.link-deep--cousin(href='#')
-            i.fas.fa-phone 
+            i.fas.fa-phone
             | &nbsp; (61) 3322-7826
         p.white
-          i.fas.fa-map-marker-alt 
+          i.fas.fa-map-marker-alt
           | &nbsp; Cep: 70340-906
         p.white
           i.fas.fa-clock &nbsp;

@@ -114,21 +114,6 @@
   }
 }
 
-.button {
-  display: inline-block;
-  background-color: $secondary;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-
-  &:hover {
-    cursor: pointer;
-    background-color: #333;
-  }
-}
-
 .nav-none {
   display: none;
 }

@@ -8,11 +8,11 @@ import $ from 'jquery'
 window.$ = window.jQuery = $
 
 // inicializa ekkoLightbox
-$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-  event.preventDefault();
+$(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
+  event.preventDefault()
   return $(this).ekkoLightbox({
-      always_show_close: true,
-      gallery_parent_selector: '.gallery',
+    always_show_close: true,
+    gallery_parent_selector: '.gallery'
   })
 })
 
@@ -20,15 +20,15 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
 var sticky = new Sticky('.sticky-js')
 
 // anima anchor
-$('.nav-item').click(function(event){
+$('.nav-item').click(function (event) {
   $('html, body').animate({
-      scrollTop: $( $.attr(this, 'href') ).offset().top
+    scrollTop: $($.attr(this, 'href')).offset().top
   }, 500)
   event.preventDefault()
 })
 
 // add class to wordpress widget ul
-$(document).ready(function() {
+$(document).ready(function () {
   $('.card-list--parent > ul').addClass('fa-ul')
   $('.card-list--parent > ul li').append('<span class="fa-li"><i class="fas fa-link"></i></span>')
 })
@@ -37,9 +37,21 @@ $(document).ready(function() {
 $(document).ready(function () {
   // Handler for .ready() called.
   $('html, body').animate({
-      scrollTop: $('#js-nimble').offset().top
-  }, 'slow');
-});
+    scrollTop: $('#js-nimble').offset().top
+  }, 'slow')
+})
+
+// contact form 7 + bootstrap
+
+$(document).ready(function () {
+  // $('#wpcf7-f122-o1').addClass('container')
+  $('.wpcf7-form').addClass('row')
+  $('.c7-md-6').parent().parent().parent().addClass('col-md-6')
+  $('.c7-md-12').parent().parent().parent().addClass('col-md-12')
+  $('.wpcf7-submit').parent().addClass('col-md-12')
+})
+
+// page section anchor
 
 $(window).scroll(function () {
   var scrollDistance = $(window).scrollTop()
@@ -54,27 +66,34 @@ $(window).scroll(function () {
 }).scroll()
 
 // Navegação Nav Fixed e Botão Voltar para o topo.
-var btn = $('.button')
+var btn = $('.js-gototop')
+var cot = $('.js-cot')
 var navsec = $('.navsec')
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
     btn.addClass('show')
-    navsec.fadeIn("slow")
+    cot.addClass('show')
+    navsec.fadeIn('slow')
   } else {
     btn.removeClass('show')
-    navsec.fadeOut("slow");
+    cot.removeClass('show')
+    navsec.fadeOut('slow')
   }
 })
 
-// $(window).scroll(function () {
-//   if ($(window).scrollTop() > 100) {
-//     navsec.removeClass('d-none')
-//   }
-// })
-
+// backtotop top
 btn.on('click', function (e) {
   e.preventDefault()
-  $('html, body').animate({scrollTop:0}, '300')
+  $('html, body').animate({ scrollTop: 0 }, '300')
 })
 
+// select option for contatc form 7
+$(function () {
+  var $select = $('.js-my-select')
+  var $images = $('.js-my-file')
 
+  $select.on('change', function () {
+    var value = '.' + $(this).val()
+    $images.removeClass('d-none').not(value).addClass('d-none')
+  })
+})

@@ -1,0 +1,18 @@
+.btn-totop {
+  background-color: $secondary;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+}
+
+.btn-cotacao {
+  position: fixed;
+  bottom: 30px;
+  right: 70px;
+}
