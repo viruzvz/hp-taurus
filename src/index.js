@@ -20,7 +20,7 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
 var sticky = new Sticky('.sticky-js')
 
 // anima anchor
-$('.nav-item').click(function (event) {
+$('.nav-link').click(function (event) {
   $('html, body').animate({
     scrollTop: $($.attr(this, 'href')).offset().top
   }, 500)
