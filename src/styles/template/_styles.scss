@@ -31,6 +31,14 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(240, 240, 240, 1) 100%);
 }
 
+.bg-taurus2 {
+  background-color: $taurus2;
+}
+
+.c-taurus2 {
+  color: $taurus2;
+}
+
 .c-primary {
   color: $primary !important;
 }
